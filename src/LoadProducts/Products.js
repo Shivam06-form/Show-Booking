@@ -12,6 +12,18 @@ const Products =(props)=>{
 	const [ticket, setticket] = useState('')
 	
 	
+const getTicket = (ticket)=>{
+	setticket(ticket.target.value)
+  }
+  
+
+const onShow=()=>{
+	setshowForm(true);
+}
+const onClose=()=>{
+	setshowForm(false);
+}
+
 	if ( useMediaQuery({ query: '(max-width: 540px)' })) {
 		
 
@@ -25,21 +37,10 @@ const Products =(props)=>{
           <h4>	<NavLink to={`/Shopping-Cart/Info/${props.id}`} > View More </NavLink></h4>
 	
         </div>
+		<button onClick={onShow} >Rotate Phone to Book </button>
       </div>
       </Fragment>
 	)
-}
-
-const getTicket = (ticket)=>{
-	setticket(ticket.target.value)
-  }
-  
-
-const onShow=()=>{
-	setshowForm(true);
-}
-const onClose=()=>{
-	setshowForm(false);
 }
 
 

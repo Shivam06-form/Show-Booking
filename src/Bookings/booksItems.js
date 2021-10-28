@@ -6,6 +6,7 @@ import { Fragment} from 'react';
 const BookItems =(props)=>{
 // const getItem = JSON.parse(localStorage.getItem('itemsTotal'))
 const getItems= JSON.parse(localStorage.getItem('show')) 
+
 let shows=[];
 const deleteItem = (e)=> {
   e.preventDefault()
@@ -20,15 +21,8 @@ const deleteItem = (e)=> {
     })
     console.log(getItems, deleteItems)
   }
+  window.location.reload(false);
   localStorage.setItem('show',JSON.stringify(shows))
-
-}
-if (getItems.length===0||!getItems) {
-  return(
-    <div className={classes.products}>
-      <h4 className=" alert-danger">Removed</h4>
-  </div>
-  )
 }
 
   return (
@@ -39,7 +33,7 @@ if (getItems.length===0||!getItems) {
           <p >{props.Name}</p>
           <h4 >Date:{props.Price}</h4>
           <h3>Ticket:{props.Ticket} x </h3>
-          <button onClick={deleteItem}>Delete</button>
+       <button onClick={deleteItem} >Delete</button> 
         </div>
       </div>
 </Fragment>
