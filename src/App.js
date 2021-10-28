@@ -1,24 +1,35 @@
-import logo from './logo.svg';
+import React from 'react';
+import { Route ,Switch} from 'react-router-dom';
 import './App.css';
+import Books from './Bookings/books';
+import Header from './Header/Header';
+import ContextProvider from './Store(Use Less Dnot Look)/cart-provider'
+import SearchBar from './SearchBar/searchbar'
+import Summary from './Summary/summary'
+
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <ContextProvider>
+  
+       <div className="App">
+         <Header/>
+         <Switch>
+         <Route path='/Shopping-Cart/:CartItems' exact >
+        <Books/>
+        </Route>
+        <Route path='/Shopping-Cart/' exact>
+        <SearchBar/>
+        </Route>
+        <Route path='/Shopping-Cart/Info/:id' exact> 
+        <Summary/>
+       </Route>
+       </Switch>
     </div>
+
+    </ContextProvider>
   );
 }
 

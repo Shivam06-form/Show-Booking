@@ -1,0 +1,23 @@
+.cardWrap {
+    display: block;
+  border: 5px solid goldenrod;
+margin:5rem auto; ;
+margin-left: auto;
+margin-right: auto;
+position: fixed;
+background-color: transparent;
+}
+  
+  
+  .cardWrap h2 {
+    color: Red;
+    text-align: center;
+    z-index:1;
+    opacity:1;
+
+  }
+
+  .cardWrap input {
+    padding: .2rem;
+    margin: .5rem;
+  }

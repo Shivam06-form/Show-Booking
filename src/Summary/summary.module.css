@@ -1,0 +1,32 @@
+.info{
+    text-align: center;
+    background-color:lightcyan;
+    font-family:cursive;
+}
+
+.info img{
+    border: 10px solid goldenrod;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    width: 30%;
+}
+
+.info h1{
+    border: 1px solid goldenrod;
+    border-radius :2rem;
+    box-sizing:1rem;
+}
+
+@media screen and (max-width: 600px){
+    .info img{
+        width: 90%;
+    }
+    
+.info h1{
+    border: 1px solid goldenrod;
+    border-radius :2rem;
+    box-sizing:1rem;
+    font-size:large;
+
+}
+}

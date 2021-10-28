@@ -1,0 +1,33 @@
+.post {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 
+}
+
+
+
+  .post button {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding: 5px;
+    width:4rem;
+    background-color:lightblue;
+    animation: enter 1s ease-in-out;
+    border: 3px solid goldenrod;
+    border-radius: 6rem;
+    }
+
+  .post button:hover {
+    cursor: pointer;
+    background-color:goldenrod;
+    width: 4rem;
+  }
+
+ .buttonleft {
+   float: left;
+ }
+ .buttonright {
+   float: right;
+ }
