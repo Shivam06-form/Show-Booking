@@ -1,5 +1,5 @@
 import React, {  useEffect, useState }  from 'react';
-import { NavLink } from 'react-router-dom';
+
 
 
 import classes from './TicketForm.module.css'
@@ -16,7 +16,11 @@ return localShows ? JSON.parse(localShows):[]
   
 }
 
-const deleteItem =localStorage.removeItem('show')
+
+
+
+
+
 
 const onSubmit = (e) => {
   e.preventDefault()
@@ -27,10 +31,11 @@ const onSubmit = (e) => {
       thumbnail:props.thumbnail,
       Date: date,
       tickets:props.value,
-      delete:deleteItem
+    //  delete:deleteItem
     })  
     
     localStorage.setItem('show',JSON.stringify(shows))
+  
   }
   
   useEffect(() => {
@@ -42,9 +47,7 @@ const onSubmit = (e) => {
   const ondateChange=(date)=> {
     setdate(date.target.value)
 }
-  if (onSubmit) {
-   return <NavLink to={`/Shopping-Cart/Info/${props.id}`} > View More </NavLink>
-  }
+
 
   
   return (

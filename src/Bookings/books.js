@@ -8,8 +8,6 @@ const Books =()=>{
   }  
   
 
-
-
 const BookItem = getItem.map(cart => (
   <BookItems
     key={cart.id}
