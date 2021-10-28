@@ -1,21 +1,21 @@
 {
   "files": {
     "main.css": "/Show-Booking/static/css/main.48c16122.chunk.css",
-    "main.js": "/Show-Booking/static/js/main.6b71800e.chunk.js",
-    "main.js.map": "/Show-Booking/static/js/main.6b71800e.chunk.js.map",
+    "main.js": "/Show-Booking/static/js/main.e5a2de7e.chunk.js",
+    "main.js.map": "/Show-Booking/static/js/main.e5a2de7e.chunk.js.map",
     "runtime-main.js": "/Show-Booking/static/js/runtime-main.e2a00ebb.js",
     "runtime-main.js.map": "/Show-Booking/static/js/runtime-main.e2a00ebb.js.map",
-    "static/js/2.29822da7.chunk.js": "/Show-Booking/static/js/2.29822da7.chunk.js",
-    "static/js/2.29822da7.chunk.js.map": "/Show-Booking/static/js/2.29822da7.chunk.js.map",
+    "static/js/2.5e5111ab.chunk.js": "/Show-Booking/static/js/2.5e5111ab.chunk.js",
+    "static/js/2.5e5111ab.chunk.js.map": "/Show-Booking/static/js/2.5e5111ab.chunk.js.map",
     "index.html": "/Show-Booking/index.html",
     "static/css/main.48c16122.chunk.css.map": "/Show-Booking/static/css/main.48c16122.chunk.css.map",
-    "static/js/2.29822da7.chunk.js.LICENSE.txt": "/Show-Booking/static/js/2.29822da7.chunk.js.LICENSE.txt",
+    "static/js/2.5e5111ab.chunk.js.LICENSE.txt": "/Show-Booking/static/js/2.5e5111ab.chunk.js.LICENSE.txt",
     "static/media/CS-GO-image.ecd7a38d.jpg": "/Show-Booking/static/media/CS-GO-image.ecd7a38d.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e2a00ebb.js",
-    "static/js/2.29822da7.chunk.js",
+    "static/js/2.5e5111ab.chunk.js",
     "static/css/main.48c16122.chunk.css",
-    "static/js/main.6b71800e.chunk.js"
+    "static/js/main.e5a2de7e.chunk.js"
   ]
 }
